@@ -23,18 +23,19 @@ function createImagesGalary() {
   return longString += protoString;
 
   }, '')
-  
   fatherDiv.insertAdjacentHTML("beforeend", htmlMarcImgs);
+
+  //// Додавання виклику і настройок бібліотеки 
+
 
   const bigPhoto = new SimpleLightbox('.gallery__item', {
 
     captionsData : 'alt',
     captionDelay : 250,
     
-
   })
-  console.dir(bigPhoto)
+ 
 }
 createImagesGalary()   /// виклик функції
 
-console.dir(SimpleLightbox)
+
