@@ -48,13 +48,11 @@ function clickEvent(event) {
 
 /////////// Видалення  по escape
 function closeByEscpt (event){
- 
   if (event.code === 'Escape') {
     instance.close()
- 
-  }
-  document.removeEventListener("keydown", closeByEscpt)
+   document.removeEventListener("keydown", closeByEscpt)
    console.log('removeEventListener = true')
+  }
 }
   document.addEventListener("keydown", closeByEscpt);
   

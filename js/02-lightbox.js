@@ -28,12 +28,18 @@ function createImagesGalary() {
   //// Додавання виклику і настройок бібліотеки 
 
 
-  const bigPhoto = new SimpleLightbox('.gallery__item', {
+  // const bigPhoto = new SimpleLightbox('.gallery__item', {
 
-    captionsData : 'alt',
-    captionDelay : 250,
+  //   captionsData : 'alt',
+  //   captionDelay: 250,
+  //   navText : ['<','>']
     
-  })
+  // })
+
+  var lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+    navText : ['<','>'] });
  
 }
 createImagesGalary()   /// виклик функції
